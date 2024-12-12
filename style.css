@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    border: 4px solid #ccc;
+    border-radius: 10px ;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #928585;
+}
+
+
+
+
+.blinkingText {
+    color: #E0B612;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+
+}
+button {
+    width: 75px;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ccc8c8;
+    border: 1px solid #363438;
+}
+
+
+.operator {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.equal-sign {
+    background-color: #333;
+    color: #fff;
+}
+
+#theme-toggle {
+    
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+
+
+/* Media Query for Smaller Screens */
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 90%;
+    }
+}
+
+
+/* Dark Theme */
+
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme .calculator {
+    background-color: #333;
+    border-color: #444;
+}
+
+.dark-theme .operator {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-theme #theme-toggle {
+    background-color: #444;
+    color: #fff;
+}
